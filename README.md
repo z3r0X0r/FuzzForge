@@ -9,32 +9,24 @@ Features ✨
     Output to File: Option to save results to an output file.
     User-Friendly: Simple command-line interface with clear options.
 
-Installation 🛠️
+Installation & Usage 🛠️
 
-    Clone the Repository:
+    Download the Binary:
+
+    Head over to the Releases section and download the latest version of the FuzzForge binary for your operating system.
+
+    Run the Tool:
+
+    After downloading, navigate to the directory where the binary is located and run it using the terminal:
 
     bash
 
-git clone https://github.com/z3r0X0r/fuzzforge.git
-cd fuzzforge
-
-Build the Tool:
-Make sure you have Go installed. Build the tool using:
-
-bash
-
-    go build -o fuzzforge
-
-Usage 📜
-
-bash
-
-./fuzzforge -u <target-url> -w <wordlist-file> -x <extensions> -c <concurrency> -m <mode> -o <output-file>
+    ./fuzzforge -u <target-url> -w <wordlist-file> -x <extensions> -c <concurrency> -m <mode> -o <output-file>
 
 Options ⚙️
 
     -u <target-url>: Target URL for fuzzing (e.g., http://example.com).
-    -w <wordlist-file>: Path to the wordlist file (e.g., dirb_wordlist.txt).
+    -w <wordlist-file>: Path to the wordlist file (e.g., wordlist.txt).
     -x <extensions>: Comma-separated list of file extensions to test (e.g., .php,.html,.js,.txt).
     -c <concurrency>: Number of concurrent requests (e.g., 100).
     -m <mode>: Fuzzing mode: dir for directory fuzzing or param for parameter fuzzing.
@@ -44,9 +36,9 @@ Example Command 💻
 
 bash
 
-./fuzzforge -u http://example.com -w /path/of/the/wordlist
+./fuzzforge -u http://example.com -w /path/of/the/wordlist -x .php,.html,.js,.txt -c 100 -m dir -o output.txt
 
-This command performs directory brute-forcing on http://example.com, using the wordlist dirb_wordlist.txt, testing file extensions .php, .html, .js, and .txt, with a concurrency of 100, and saving the results to output.txt.
+This command performs directory brute-forcing on http://example.com, using the wordlist, testing file extensions .php, .html, .js, and .txt, with a concurrency of 100, and saving the results to output.txt.
 Contributing 🤝
 
 Contributions are welcome! Please open an issue or submit a pull request if you have improvements or bug fixes.
