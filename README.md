@@ -39,9 +39,9 @@ bash
 ./fuzzforge -u http://example.com -w /path/of/the/wordlist -x .php,.html,.js,.txt -c 100 -m dir -o output.txt
 
 This command performs directory brute-forcing on http://example.com, using the wordlist, testing file extensions .php, .html, .js, and .txt, with a concurrency of 100, and saving the results to output.txt.
+
 Contributing 🤝
 
 Contributions are welcome! Please open an issue or submit a pull request if you have improvements or bug fixes.
-License 📜
 
 For questions or support, please contact maxuzumaki888@gmail.com.
