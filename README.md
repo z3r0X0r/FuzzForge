@@ -1,6 +1,7 @@
 FuzzForge 🚀
 
 FuzzForge is a high-speed Go-based directory and parameter fuzzer designed for security professionals and bug bounty hunters. It performs efficient directory brute-forcing and parameter testing with customizable wordlists and file extensions.
+
 Features ✨
 
     High-Speed Fuzzing: Optimized for fast performance with concurrency support.
